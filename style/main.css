@@ -1,0 +1,135 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #000;
+    --branco: #aaa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* base */
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+header .logo {
+    margin-left: 5px;
+    margin-right: 35px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times, serif;
+    font-size: 40px;
+    transform: translateZ(0);
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--branco);
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* filme principal */
+.container {
+    margin-left: 40px;
+}
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('../img/capa-serie1.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.filme-principal .titulo {
+    font-size: 40px;
+} 
+.filme-principal .container{
+    width: 40%;
+}
+/* botoes */
+.botao1 {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+
+    padding: 15px 10px;
+    margin-right: 12px;
+    font-size: 10px;
+
+    cursor: pointer;
+    transition: 300ms;
+
+}
+
+.botao1:hover {
+    background-color: rgba(255, 255, 255, 0.788);
+    color: rgb(0, 0, 0);
+}
+
+.botao2 {
+    background-color: 	rgba(192, 192, 192, 0.404);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+
+    padding: 15px 10px;
+    margin-right: 12px;
+    font-size: 10px; 
+
+    cursor: pointer;
+    transition: 300ms;
+
+}
+
+.botao2:hover {
+    background-color: 	rgba(192, 192, 192, 0.24);
+    color: rgb(255, 255, 255);
+    
+} 
+
+.botao i {
+    margin-right: 6px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: none;
+    padding: none;
+}
+
+.box-filme{
+    border-radius: 5px;
+}
+
+.carrosel-filmes{
+    margin-top: 7px;
+}
